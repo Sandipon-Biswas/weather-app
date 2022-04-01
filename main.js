@@ -7,7 +7,7 @@ var city =document.querySelector("#city");
 
 
 
-//
+//for defolt
 fetch('https:api.openweathermap.org/data/2.5/forecast?q=london&appid=b65989e90fc4ad90a1b707dc9c7726bd')
 .then(response => response.json())
 .then(data => {
@@ -23,7 +23,7 @@ fetch('https:api.openweathermap.org/data/2.5/forecast?q=london&appid=b65989e90fc
         +".png";
     } 
 })
-//
+//for defolt end
 
 
 
