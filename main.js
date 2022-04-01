@@ -72,7 +72,7 @@ function DefaultScreen(){
 var d = new Date();
 var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday",];
 
-
+//Function to get the correct integer for the index of the days array
 function CheckDay(day){
     if(day + d.getDay() > 6){
         return day + d.getDay() - 7;
@@ -82,6 +82,6 @@ function CheckDay(day){
     }
 }
 
-    for(x = 1; x<6; x++){
-        document.getElementById("day" + (x)).innerHTML = weekday[CheckDay(x)];
+    for(i = 0; i<5; i++){
+        document.getElementById("day" + (i+1)).innerHTML = weekday[CheckDay(i)];
     }
